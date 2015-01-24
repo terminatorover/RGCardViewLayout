@@ -14,6 +14,7 @@
 		A128C7F61A734A9800C75B99 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A128C7F51A734A9800C75B99 /* Images.xcassets */; };
 		A128C7F91A734A9800C75B99 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A128C7F71A734A9800C75B99 /* LaunchScreen.xib */; };
 		A128C8051A734A9800C75B99 /* RGCardViewLayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A128C8041A734A9800C75B99 /* RGCardViewLayoutTests.m */; };
+		A128C8101A734AAC00C75B99 /* RGCardViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A128C80F1A734AAC00C75B99 /* RGCardViewLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		A128C7FE1A734A9800C75B99 /* RGCardViewLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RGCardViewLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A128C8031A734A9800C75B99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A128C8041A734A9800C75B99 /* RGCardViewLayoutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RGCardViewLayoutTests.m; sourceTree = "<group>"; };
+		A128C80E1A734AAC00C75B99 /* RGCardViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGCardViewLayout.h; sourceTree = SOURCE_ROOT; };
+		A128C80F1A734AAC00C75B99 /* RGCardViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGCardViewLayout.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				A128C7ED1A734A9800C75B99 /* AppDelegate.m */,
 				A128C7EF1A734A9800C75B99 /* ViewController.h */,
 				A128C7F01A734A9800C75B99 /* ViewController.m */,
+				A128C80E1A734AAC00C75B99 /* RGCardViewLayout.h */,
+				A128C80F1A734AAC00C75B99 /* RGCardViewLayout.m */,
 				A128C7F21A734A9800C75B99 /* Main.storyboard */,
 				A128C7F51A734A9800C75B99 /* Images.xcassets */,
 				A128C7F71A734A9800C75B99 /* LaunchScreen.xib */,
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A128C7F11A734A9800C75B99 /* ViewController.m in Sources */,
+				A128C8101A734AAC00C75B99 /* RGCardViewLayout.m in Sources */,
 				A128C7EE1A734A9800C75B99 /* AppDelegate.m in Sources */,
 				A128C7EB1A734A9800C75B99 /* main.m in Sources */,
 			);
