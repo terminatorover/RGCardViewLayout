@@ -8,3 +8,5 @@ of the collection View. and you can use your collection View as you always do.
 One important this for this layout is that in the datasource protcol to specify the number of cards you must use 
 numberOfSectionsInCollectionView: , and for collectionView:numberOfItemsInSection: you must always return 1.
 
+also note that the itemsize is computed by the layout to be "appropriate" to the size of the collection view 
+itself so setting it won't do anything.
