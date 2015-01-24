@@ -17,11 +17,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2jx-NL-l4Z">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2jx-NL-l4Z">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" red="0.4823529411764706" green="0.29411764705882354" blue="0.41568627450980394" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CDv-Oe-t8M" customClass="RGCardViewLayout">
-                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="itemSize" width="363" height="608"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -31,11 +31,38 @@
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="363" height="608"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xNQ-Pk-iDy">
+                                                    <rect key="frame" x="0.0" y="450" width="363" height="150"/>
+                                                    <subviews>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4EY-ia-Vmd">
+                                                            <rect key="frame" x="8" y="8" width="341" height="150"/>
+                                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </string>
+                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        </textView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.48999999999999999" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="4EY-ia-Vmd" secondAttribute="bottom" constant="-8" id="4Ee-WO-a8J"/>
+                                                        <constraint firstItem="4EY-ia-Vmd" firstAttribute="leading" secondItem="xNQ-Pk-iDy" secondAttribute="leading" constant="8" id="AgZ-Jm-Fzg"/>
+                                                        <constraint firstItem="4EY-ia-Vmd" firstAttribute="top" secondItem="xNQ-Pk-iDy" secondAttribute="top" constant="8" id="KsU-l1-f38"/>
+                                                        <constraint firstAttribute="height" constant="150" id="MXL-T5-rd6"/>
+                                                        <constraint firstAttribute="trailing" secondItem="4EY-ia-Vmd" secondAttribute="trailing" constant="14" id="pZT-cv-URa"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <color key="backgroundColor" red="0.12549019610000001" green="0.1764705882" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="xNQ-Pk-iDy" firstAttribute="bottom" secondItem="aqk-3e-1LG" secondAttribute="bottomMargin" id="A1g-2E-pvX"/>
+                                            <constraint firstItem="xNQ-Pk-iDy" firstAttribute="leading" secondItem="aqk-3e-1LG" secondAttribute="leadingMargin" constant="-8" id="b9D-UK-Ecz"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="xNQ-Pk-iDy" secondAttribute="trailing" constant="-8" id="cMZ-LJ-f4w"/>
+                                        </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="15"/>
@@ -59,7 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="267" y="384"/>
+            <point key="canvasLocation" x="61" y="296"/>
         </scene>
     </scenes>
 </document>

@@ -69,6 +69,7 @@
     }
     
     [cell.contentView addSubview:imageView];
+    [cell.contentView sendSubviewToBack:imageView];
 }
 
 
