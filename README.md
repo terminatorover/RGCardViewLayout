@@ -1,4 +1,5 @@
 # RGCardViewLayout
+[Watch it in action here](https://www.youtube.com/watch?v=g_NGIphyckQ&feature=youtu.be)
 This is a layout that clones the interaction of going through cities in the City Guide App. (this app is #3 for the top iOS app animations on the raywenderlich
 
 To use this simply drop it in as a class in the storyboard or nib when you create your collection view. or you can 
