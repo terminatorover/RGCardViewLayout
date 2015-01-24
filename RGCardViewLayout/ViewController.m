@@ -8,7 +8,7 @@
 #define TAG 99
 
 #import "ViewController.h"
-
+#import "RGCollectionViewCell.h"
 @interface ViewController ()<UICollectionViewDataSource>
 
 @end
@@ -36,40 +36,40 @@
 }
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"reuse" forIndexPath:indexPath];
+    RGCollectionViewCell *cell = (RGCollectionViewCell  *)[collectionView dequeueReusableCellWithReuseIdentifier:@"reuse" forIndexPath:indexPath];
     [self configureCell:cell withIndexPath:indexPath];
     return cell;
 }
 
-- (void)configureCell:(UICollectionViewCell *)cell withIndexPath:(NSIndexPath *)indexPath
+- (void)configureCell:(RGCollectionViewCell *)cell withIndexPath:(NSIndexPath *)indexPath
 {
     UIView  *subview = [cell.contentView viewWithTag:TAG];
     [subview removeFromSuperview];
-    
-    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, cell.bounds.size.width, cell.bounds.size.height)];
-    imageView.tag = TAG;
+
     switch (indexPath.section) {
         case 0:
-            imageView.image =  [UIImage imageNamed:@"i1"];
+            cell.imageView.image =  [UIImage imageNamed:@"i1"];
+            cell.mainLabel.text = @"Glaciers";
             break;
         case 1:
-            imageView.image =  [UIImage imageNamed:@"i2"];
+            cell.imageView.image =  [UIImage imageNamed:@"i2"];
+            cell.mainLabel.text = @"Parrots";
             break;
         case 2:
-            imageView.image =  [UIImage imageNamed:@"i3"];
+            cell.imageView.image =  [UIImage imageNamed:@"i3"];
+            cell.mainLabel.text = @"Whales";
             break;
         case 3:
-            imageView.image =  [UIImage imageNamed:@"i4"];
+            cell.imageView.image =  [UIImage imageNamed:@"i4"];
+            cell.mainLabel.text = @"Lake View";
             break;
         case 4:
-            imageView.image =  [UIImage imageNamed:@"i5"];
+            cell.imageView.image =  [UIImage imageNamed:@"i5"];
             break;
         default:
             break;
     }
     
-    [cell.contentView addSubview:imageView];
-    [cell.contentView sendSubviewToBack:imageView];
 }
 
 

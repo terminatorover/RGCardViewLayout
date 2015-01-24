@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B93D1E18-79D0-46A9-B3C8-C45051BB444E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RGCardViewLayout</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>30199E033BC008EB0ADEC7E1B323C3A51FB3168F</key>
+		<string>https://github.com/terminatorover/RGCardViewLayout.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>RGCardViewLayout.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>30199E033BC008EB0ADEC7E1B323C3A51FB3168F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/terminatorover/RGCardViewLayout.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>30199E033BC008EB0ADEC7E1B323C3A51FB3168F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>30199E033BC008EB0ADEC7E1B323C3A51FB3168F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RGCardViewLayout</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -15,6 +15,7 @@
 		A128C7F91A734A9800C75B99 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A128C7F71A734A9800C75B99 /* LaunchScreen.xib */; };
 		A128C8051A734A9800C75B99 /* RGCardViewLayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A128C8041A734A9800C75B99 /* RGCardViewLayoutTests.m */; };
 		A128C8101A734AAC00C75B99 /* RGCardViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A128C80F1A734AAC00C75B99 /* RGCardViewLayout.m */; };
+		A128C8131A73642A00C75B99 /* RGCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A128C8121A73642A00C75B99 /* RGCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		A128C8041A734A9800C75B99 /* RGCardViewLayoutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RGCardViewLayoutTests.m; sourceTree = "<group>"; };
 		A128C80E1A734AAC00C75B99 /* RGCardViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGCardViewLayout.h; sourceTree = SOURCE_ROOT; };
 		A128C80F1A734AAC00C75B99 /* RGCardViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGCardViewLayout.m; sourceTree = SOURCE_ROOT; };
+		A128C8111A73642A00C75B99 /* RGCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGCollectionViewCell.h; sourceTree = "<group>"; };
+		A128C8121A73642A00C75B99 /* RGCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,8 @@
 				A128C80E1A734AAC00C75B99 /* RGCardViewLayout.h */,
 				A128C80F1A734AAC00C75B99 /* RGCardViewLayout.m */,
 				A128C7F21A734A9800C75B99 /* Main.storyboard */,
+				A128C8111A73642A00C75B99 /* RGCollectionViewCell.h */,
+				A128C8121A73642A00C75B99 /* RGCollectionViewCell.m */,
 				A128C7F51A734A9800C75B99 /* Images.xcassets */,
 				A128C7F71A734A9800C75B99 /* LaunchScreen.xib */,
 				A128C7E81A734A9800C75B99 /* Supporting Files */,
@@ -224,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A128C8131A73642A00C75B99 /* RGCollectionViewCell.m in Sources */,
 				A128C7F11A734A9800C75B99 /* ViewController.m in Sources */,
 				A128C8101A734AAC00C75B99 /* RGCardViewLayout.m in Sources */,
 				A128C7EE1A734A9800C75B99 /* AppDelegate.m in Sources */,
@@ -418,6 +424,7 @@
 				A128C80A1A734A9800C75B99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A128C80B1A734A9800C75B99 /* Build configuration list for PBXNativeTarget "RGCardViewLayoutTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +433,7 @@
 				A128C80D1A734A9800C75B99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
