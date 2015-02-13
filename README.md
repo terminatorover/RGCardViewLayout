@@ -1,4 +1,7 @@
 # RGCardViewLayout
+
+![demo](demo.gif)
+
 [Watch it in action here](https://www.youtube.com/watch?v=g_NGIphyckQ&feature=youtu.be)
 This is a layout that clones the interaction of going through cities in the City Guide App. (this app is #3 for the top iOS app animations on the raywenderlich
 
