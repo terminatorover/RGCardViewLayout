@@ -56,7 +56,11 @@
     NSArray *attributes = [super layoutAttributesForElementsInRect:rect];
     
     NSArray *cellIndices = [self.collectionView indexPathsForVisibleItems];
-    if (cellIndices.count == 1)
+    if(cellIndices.count == 0 )
+    {
+        return attributes;
+    }
+    else if (cellIndices.count == 1)
     {
         mainIndexPath = cellIndices.firstObject;
         movingInIndexPath = nil;
