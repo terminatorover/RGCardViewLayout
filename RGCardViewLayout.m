@@ -115,7 +115,7 @@
 
 - (CGRect)newFrameFromOriginal:(CGRect)orginalFrame withView:(UIView *)view
 {
-    CGFloat computedY = [self heightOffsetForView:view];
+//    CGFloat computedY = [self heightOffsetForView:view];
     return orginalFrame;
 
 }
