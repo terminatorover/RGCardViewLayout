@@ -14,3 +14,5 @@ numberOfSectionsInCollectionView: , and for collectionView:numberOfItemsInSectio
 
 also note that the itemsize is computed by the layout to be "appropriate" to the size of the collection view 
 itself so setting it won't do anything.
+
+Place the following line into your podfile to use RGCardViewLayout:   pod 'RGCardViewLayout','1.0'
