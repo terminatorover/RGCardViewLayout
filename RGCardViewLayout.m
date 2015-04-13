@@ -18,8 +18,8 @@
 
 - (void)prepareLayout
 {
-    [super prepareLayout];
     [self setupLayout];
+    [super prepareLayout];
 }
 
 
