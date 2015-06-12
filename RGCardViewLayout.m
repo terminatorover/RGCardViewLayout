@@ -22,10 +22,8 @@
     [self setupLayout];
 }
 
-
 - (void)setupLayout
 {
-
     CGFloat inset  = self.collectionView.bounds.size.width * (6/64.0f);
     inset = floor(inset);
 
@@ -34,8 +32,6 @@
     self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
 }
 
-
-
 - (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     UICollectionViewLayoutAttributes *attributes = [super layoutAttributesForItemAtIndexPath:indexPath];
@@ -43,8 +39,6 @@
     
     return attributes;
 }
-
-
 
 // indicate that we want to redraw as we scroll
 - (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds {
@@ -64,15 +58,13 @@
     {
         mainIndexPath = cellIndices.firstObject;
         movingInIndexPath = nil;
-        
-        
-    }else if(cellIndices.count > 1)
+    }
+    else if(cellIndices.count > 1)
     {
         NSIndexPath *firstIndexPath = cellIndices.firstObject;
         if(firstIndexPath == mainIndexPath)
         {
             movingInIndexPath = cellIndices[1];
-            
         }
         else
         {
@@ -93,9 +85,6 @@
     return  attributes;
 }
 
-
-
-
 - (void)applyTransformToLayoutAttributes:(UICollectionViewLayoutAttributes *)attribute
 {
     if(attribute.indexPath.section == mainIndexPath.section)
@@ -106,25 +95,21 @@
     }
     else if (attribute.indexPath.section == movingInIndexPath.section)
     {
-        
         UICollectionViewCell *cell = [self.collectionView cellForItemAtIndexPath:movingInIndexPath];
         attribute.transform3D = [self transformFromView:cell];
     }
 }
 
-
 - (CGRect)newFrameFromOriginal:(CGRect)orginalFrame withView:(UIView *)view
 {
 //    CGFloat computedY = [self heightOffsetForView:view];
     return orginalFrame;
-
 }
 
 
 #pragma mark - Logica
 - (CGFloat)baseOffsetForView:(UIView *)view
 {
-    
     UICollectionViewCell *cell = (UICollectionViewCell *)view;
     CGFloat offset =  ([self.collectionView indexPathForCell:cell].section) * self.collectionView.bounds.size.width;
     
@@ -141,7 +126,7 @@
     height = 120 * (currentOffset - baseOffsetForCurrentView)/scrollViewWidth;
     if(height < 0 )
     {
-        height = - 1 *height;
+        height = - 1 * height;
     }
     return height;
 }
@@ -164,11 +149,12 @@
     {
         return YES;
     }
-    return NO;
-    
+    return NO;    
 }
 
+
 #pragma mark - Transform Related Calculation
+
 - (CATransform3D)transformFromView:(UIView *)view
 {
     CGFloat angle = [self angleForView:view];
@@ -177,7 +163,7 @@
     return [self transformfromAngle:angle height:height xAxis:xAxis];
 }
 
-- (CATransform3D)transformfromAngle:(CGFloat )angle height:(CGFloat) height xAxis:(BOOL)axis
+- (CATransform3D)transformfromAngle:(CGFloat)angle height:(CGFloat)height xAxis:(BOOL)axis
 {
     CATransform3D t = CATransform3DIdentity;
     t.m34  = 1.0/-500;
@@ -194,9 +180,6 @@
     
     return t;
 }
-
-
-
 
 @end
 
