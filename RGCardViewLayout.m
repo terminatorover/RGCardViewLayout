@@ -13,7 +13,7 @@
     CGFloat previousOffset;
     NSIndexPath *mainIndexPath;
     NSIndexPath *movingInIndexPath;
-    CGFloat diffrence;
+    CGFloat difference;
 }
 
 - (void)prepareLayout
@@ -45,7 +45,7 @@
     return YES;
 }
 
--(NSArray *)layoutAttributesForElementsInRect:(CGRect)rect
+- (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect
 {
     NSArray *attributes = [super layoutAttributesForElementsInRect:rect];
     
@@ -74,7 +74,7 @@
         
     }
     
-    diffrence =  self.collectionView.contentOffset.x - previousOffset;
+    difference =  self.collectionView.contentOffset.x - previousOffset;
     
     previousOffset = self.collectionView.contentOffset.x;
     
@@ -98,12 +98,6 @@
         UICollectionViewCell *cell = [self.collectionView cellForItemAtIndexPath:movingInIndexPath];
         attribute.transform3D = [self transformFromView:cell];
     }
-}
-
-- (CGRect)newFrameFromOriginal:(CGRect)orginalFrame withView:(UIView *)view
-{
-//    CGFloat computedY = [self heightOffsetForView:view];
-    return orginalFrame;
 }
 
 
@@ -176,7 +170,6 @@
     {
         t = CATransform3DRotate(t,angle, -1, 1, 0);
     }
-    //    t = CATransform3DTranslate(t, 0, height, 0);
     
     return t;
 }
