@@ -34,7 +34,7 @@
 
 - (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewLayoutAttributes *attributes = [super layoutAttributesForItemAtIndexPath:indexPath];
+    UICollectionViewLayoutAttributes *attributes = [[super layoutAttributesForItemAtIndexPath:indexPath] copy];
     [self applyTransformToLayoutAttributes:attributes];
     
     return attributes;
@@ -47,7 +47,8 @@
 
 - (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect
 {
-    NSArray *attributes = [super layoutAttributesForElementsInRect:rect];
+    NSArray *attributesSuper = [super layoutAttributesForElementsInRect:rect];
+    NSArray *attributes = [[NSArray alloc] initWithArray:attributesSuper copyItems:YES];
     
     NSArray *cellIndices = [self.collectionView indexPathsForVisibleItems];
     if(cellIndices.count == 0 )
